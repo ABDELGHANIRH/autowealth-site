@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://autowealthai.com
+
+# Sitemaps
+Sitemap: https://autowealthai.com/sitemap.xml
