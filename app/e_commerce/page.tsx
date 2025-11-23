@@ -3,6 +3,20 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "AI Automation for E-Commerce – Boost Revenue on Autopilot | AutoWealthAI",
+  description:
+    "Use AI to automate customer support, order tracking, abandoned cart recovery, upsells, and personalized marketing for your online store.",
+  openGraph: {
+    title: "AI Automation for E-Commerce – Boost Revenue on Autopilot",
+    description:
+      "Supercharge your store with AI-powered automation that increases conversions and improves customer experience.",
+    url: "https://autowealthai.com/e_commerce",
+    siteName: "AutoWealthAI",
+  },
+};
+
+
 export default function EcommerceAICaseStudy() {
   return (
     <section className="py-16 bg-white dark:bg-gray-900">

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://autowealthai.com',
+    url: 'https://autowealthai.com/<page>',
     title: 'AutoWealthAI — AI Automation & Consulting',
     description: 'We help businesses save time and scale with AI automations. Automate your workflows, boost revenue, and focus on growth.',
     siteName: 'AutoWealthAI',
