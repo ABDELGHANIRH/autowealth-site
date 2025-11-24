@@ -1,4 +1,4 @@
-'use client';
+
 
 import { posts } from "@/lib/posts";
 import Link from "next/link";
