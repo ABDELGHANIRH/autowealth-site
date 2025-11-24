@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import CaseStudy from "@/components/CaseStudy";
