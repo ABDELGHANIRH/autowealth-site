@@ -14,6 +14,11 @@ export const metadata = {
     url: "https://autowealthai.com/dental_clinic",
     siteName: "AutoWealthAI",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
+  }
 };
 
 export default function DentalClinicAICaseStudy() {

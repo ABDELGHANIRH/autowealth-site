@@ -17,9 +17,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'AutoWealthAI — AI Automation & Consulting',
+  title: 'AutoWealthAI - AI Automation & Consulting',
   icons: {
-    icon: "/favicon.png", // 👈 path to your logo in /public
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
   },
   description: 'We help businesses save time and scale with AI automations. Automate your workflows, boost revenue, and focus on growth.',
   keywords: 'AI automation, business automation, workflow optimization, AI consulting, productivity tools',

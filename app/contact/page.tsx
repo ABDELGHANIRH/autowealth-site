@@ -23,6 +23,11 @@ export const metadata = {
     url: "https://autowealthai.com/contact",
     siteName: "AutoWealthAI",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
+  }
 };
 
 
