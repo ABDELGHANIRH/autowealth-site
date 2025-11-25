@@ -1,25 +1,9 @@
-
+"use client";
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-export const metadata = {
-  title: "AI Automation for E-Commerce – Boost Revenue on Autopilot | AutoWealthAI",
-  description:
-    "Use AI to automate customer support, order tracking, abandoned cart recovery, upsells, and personalized marketing for your online store.",
-  openGraph: {
-    title: "AI Automation for E-Commerce – Boost Revenue on Autopilot",
-    description:
-      "Supercharge your store with AI-powered automation that increases conversions and improves customer experience.",
-    url: "https://autowealthai.com/e_commerce",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
+
 
 
 export default function EcommerceAICaseStudy() {

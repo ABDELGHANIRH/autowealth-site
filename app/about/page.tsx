@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -11,28 +13,6 @@ import {
   Star,
 } from "lucide-react";
 import Link from "next/link";
-
-export const metadata = {
-  title: "About AutoWealthAI – Experts in Business Automation",
-  description:
-    "Learn more about AutoWealthAI, our mission, and how we help businesses automate operations using AI and smart workflows.",
-  openGraph: {
-    title: "About AutoWealthAI",
-    description:
-      "Who we are and why we build automation solutions that help businesses grow.",
-    url: "https://autowealthai.com/about",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
-
-
-
-
 
 export default function About() {
   const values = [

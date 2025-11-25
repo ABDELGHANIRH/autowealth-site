@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import CaseStudy from "@/components/CaseStudy";
@@ -15,23 +17,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata = {
-  title: "AutoWealthAI – Smart Automations for Business Growth",
-  description:
-    "Reduce no-shows, save time, and automate your business with advanced AI workflows. AutoWealthAI helps dental clinics, cleaning services, and e-commerce stores operate efficiently using powerful automation strategies.",
-  openGraph: {
-    title: "AutoWealthAI – Smart Automations for Business Growth",
-    description:
-      "Powerful AI automation solutions designed to reduce no-shows, streamline operations, and increase revenue for businesses.",
-    url: "https://autowealthai.com/",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
+
+
 
 
 export default function Home() {

@@ -1,26 +1,7 @@
-
+"use client";
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-
-export const metadata = {
-  title: "AI Automation for Cleaning Services – More Clients, Less Work | AutoWealthAI",
-  description:
-    "Automate booking, client follow-up, scheduling, and availability management. Grow your cleaning business with smart AI workflows.",
-  openGraph: {
-    title: "AI Automation for Cleaning Services – More Clients, Less Work",
-    description:
-      "Save time and book more clients automatically with AI-powered automations for cleaning businesses.",
-    url: "https://autowealthai.com/cleaning_service",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
-
 
 export default function CleaningServiceAICaseStudy() {
   return (

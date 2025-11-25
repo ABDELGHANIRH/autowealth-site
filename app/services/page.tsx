@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import ServiceCard from "@/components/ServiceCard";
 import {
@@ -15,23 +17,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Our Services – AI Automation for Modern Businesses | AutoWealthAI",
-  description:
-    "Explore our full list of automation services for dental clinics, cleaning service businesses, and e-commerce stores. Increase efficiency and reduce workload with AI.",
-  openGraph: {
-    title: "Our Services – AI Automation for Modern Businesses",
-    description:
-      "Discover how AI automation can transform your business operations and save you time.",
-    url: "https://autowealthai.com/services",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
+
 
 export default function Services() {
   const services = [

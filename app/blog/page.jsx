@@ -1,26 +1,8 @@
-
+"use client";
 
 import { posts } from "@/lib/posts";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
-export const metadata = {
-  title: "Blog – AI Automation Insights for Modern Businesses | AutoWealthAI",
-  description:
-    "Explore expert articles on AI automation for dental clinics, cleaning services, and e-commerce stores. Learn how to reduce no-shows, increase bookings, and boost revenue.",
-  openGraph: {
-    title: "Blog – AI Automation Insights | AutoWealthAI",
-    description:
-      "Discover how AI automation can transform your business operations with our expert insights and case studies.",
-    url: "https://autowealthai.com/blog",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
 
 export default function BlogPage() {
   return (

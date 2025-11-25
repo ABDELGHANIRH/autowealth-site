@@ -1,25 +1,9 @@
-
+"use client";
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-export const metadata = {
-  title: "AI Automation for Dental Clinics – Reduce No-Shows | AutoWealthAI",
-  description:
-    "Automate patient reminders, booking, follow-ups, and appointment management. Reduce no-shows and grow your dental practice with AI-powered WhatsApp automation.",
-  openGraph: {
-    title: "AI Automation for Dental Clinics – Reduce No-Shows",
-    description:
-      "Transform your dental clinic with appointment automation, patient reminders, and follow-ups powered by AI.",
-    url: "https://autowealthai.com/dental_clinic",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
+
 
 export default function DentalClinicAICaseStudy() {
   return (

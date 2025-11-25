@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from 'framer-motion';
 import ContactForm from '@/components/ContactForm';
 import { 
@@ -86,7 +87,7 @@ export default function Contact() {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }} // Animate immediately
+                animate={{ opacity: 1, y: 0 }} 
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="card p-8 text-center"
               >
