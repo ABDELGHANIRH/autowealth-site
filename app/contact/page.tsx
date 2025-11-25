@@ -1,4 +1,4 @@
-
+"use client";
 import { motion } from 'framer-motion';
 import ContactForm from '@/components/ContactForm';
 import { 
@@ -11,25 +11,6 @@ import {
   ArrowRight
 } from 'lucide-react';
 import Link from 'next/link';
-
-export const metadata = {
-  title: "Contact Us – Start Automating Your Business Today | AutoWealthAI",
-  description:
-    "Get in touch to request a demo or learn how AI automation can help your business save time and increase revenue.",
-  openGraph: {
-    title: "Contact AutoWealthAI",
-    description:
-      "Reach out to discuss your business needs or request an automation demo.",
-    url: "https://autowealthai.com/contact",
-    siteName: "AutoWealthAI",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
-  }
-};
-
 
 export default function Contact() {
   const contactInfo = [
