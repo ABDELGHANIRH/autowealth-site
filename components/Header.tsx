@@ -62,7 +62,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="https://calendly.com/abdelghani-rahmani-w/15min"
+              href="https://calendly.com/free-consulting-session/15min"
               className="btn-primary"
             >
               Book a Call
@@ -104,7 +104,7 @@ export default function Header() {
               ))}
               <div className="px-4 py-2">
                 <Link
-                  href="https://calendly.com/abdelghani-rahmani-w/15min"
+                  href="https://calendly.com/free-consulting-session/15min"
                   className="btn-primary w-full text-center block"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

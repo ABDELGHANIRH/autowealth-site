@@ -62,7 +62,7 @@ autowealthai/
 
 4. Update environment variables in `.env.local`:
    ```
-   NEXT_PUBLIC_CALENDLY_LINK=https://calendly.com/abdelghani-rahmani-w/15min
+   NEXT_PUBLIC_CALENDLY_LINK=https://calendly.com/free-consulting-session/15min
    NEXT_PUBLIC_WHATSAPP_NUMBER=+212762489130
    NEXT_PUBLIC_COMPANY_EMAIL=your_email
    NEXT_PUBLIC_SITE_URL=your_website_url
@@ -122,7 +122,7 @@ Replace placeholder images in `/public` folder:
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `NEXT_PUBLIC_CALENDLY_LINK` | Calendly booking link | `https://calendly.com/abdelghani-rahmani-w/15min` |
+| `NEXT_PUBLIC_CALENDLY_LINK` | Calendly booking link | `https://calendly.com/free-consulting-session/15min` |
 | `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp business number | `+212762489130` |
 | `NEXT_PUBLIC_COMPANY_EMAIL` | Contact email | `support@yourcompany.com` |
 | `NEXT_PUBLIC_SITE_URL` | Website URL | `https://autowealthai.com` |

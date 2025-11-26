@@ -33,7 +33,7 @@ export default function Contact() {
       icon: Calendar,
       title: 'Book a Call',
       content: 'Schedule a free consultation',
-      link: "https://calendly.com/abdelghani-rahmani-w/15min",
+      link: "https://calendly.com/free-consulting-session/15min",
       description: '15-30 minutes strategy session',
     },
   ];
@@ -197,7 +197,7 @@ export default function Contact() {
                   Get a personalized automation strategy in 15 minutes.
                 </p>
                 <Link
-                  href="https://calendly.com/abdelghani-rahmani-w/15min"
+                  href="https://calendly.com/free-consulting-session/15min"
                   className="bg-white text-accent px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center space-x-2"
                 >
                   <span>Book Free Call</span>
@@ -266,7 +266,7 @@ export default function Contact() {
               Your free consultation is just one click away.
             </p>
             <Link
-              href="https://calendly.com/abdelghani-rahmani-w/15min"
+              href="https://calendly.com/free-consulting-session/15min"
               className="btn-primary text-lg px-8 py-4"
             >
               Book Your Free Call Now

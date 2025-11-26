@@ -325,7 +325,7 @@ export default function Home() {
               AI automation.
             </p>
             <Link
-              href="https://calendly.com/abdelghani-rahmani-w/15min"
+              href="https://calendly.com/free-consulting-session/15min"
               className="btn-primary text-lg px-8 py-4 inline-flex items-center space-x-2"
             >
               <span>Book a Free Call</span>

@@ -40,7 +40,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <Link
-                href="https://calendly.com/abdelghani-rahmani-w/15min"
+                href="https://calendly.com/free-consulting-session/15min"
                 className="bg-gradient-to-r from-accent to-blue-500 text-white font-semibold rounded-xl 
                px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-base sm:text-lg md:text-xl 
                shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 
