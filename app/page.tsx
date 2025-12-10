@@ -17,10 +17,6 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-
-
-
-
 export default function Home() {
   const services = [
     {
@@ -81,14 +77,15 @@ export default function Home() {
       image: "/case1.jpg",
       title: "E-commerce Revenue Boost",
       blogUrl: "/e_commerce",
-      description: "Implemented AI-driven abandoned cart recovery system for an online retailer.",
+      description:
+        "Implemented AI-driven abandoned cart recovery system for an online retailer.",
       results: [
         "23-27% increase in recovered sales",
         "40-50% reduction in manual follow-ups",
         "$100K+ additional monthly revenue",
-      ]
+      ],
     },
-    
+
     {
       image: "/case2.jpg",
       title: "Cleaning Service Revenue Boost",
@@ -99,7 +96,7 @@ export default function Home() {
         "70-80% reduction in no-shows",
         "50-60% less time spent on scheduling",
         "30-40% increase in client satisfaction",
-      ]
+      ],
     },
     {
       image: "/case3.jpg",
@@ -110,31 +107,10 @@ export default function Home() {
       results: [
         "30% reduction in no-shows",
         "50% faster scheduling",
-        "150-200% ROI in 6 months"
-      ]
-    }
+        "150-200% ROI in 6 months",
+      ],
+    },
   ];
-
-  // const testimonials = [
-  //   {
-  //     name: 'Sarah Johnson',
-  //     company: 'TechStart Inc.',
-  //     content: 'AutoWealthAI transformed our lead management process. We went from manually tracking leads to a fully automated system that increased our conversion rate by 45%.',
-  //     avatar: '/founder.jpg',
-  //   },
-  //   {
-  //     name: 'Michael Chen',
-  //     company: 'GrowthMetrics',
-  //     content: 'The WhatsApp automation system they built for us saved 20 hours per week and improved our client response time by 90%. Highly recommended!',
-  //     avatar: '/founder.jpg',
-  //   },
-  //   {
-  //     name: 'Emily Rodriguez',
-  //     company: 'ScaleUp Solutions',
-  //     content: 'Their AI automation expertise helped us scale from 10 to 100 clients without adding more staff. The ROI was immediate and substantial.',
-  //     avatar: '/founder.jpg',
-  //   },
-  // ];
 
   return (
     <>
@@ -246,67 +222,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      {/* <section className="section-padding">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Don't just take our word for it - hear from businesses we've helped automate and scale.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="card p-6"
-              >
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-6 italic">
-                  "{testimonial.content}"
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-300 dark:bg-gray-600 rounded-full mr-4 overflow-hidden">
-                    <Image
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      width={48}
-                      height={48}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-primary dark:text-white">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {testimonial.company}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Final CTA Section */}
       <section className="section-padding bg-gradient-to-r from-primary to-blue-900">

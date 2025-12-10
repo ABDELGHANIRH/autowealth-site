@@ -45,26 +45,7 @@ export default function ServiceCard({
         {description}
       </p>
 
-      {/* CTA Button */}
-      {/* <Link
-        href={ctaLink}
-        className="inline-flex items-center text-accent hover:text-blue-600 font-medium transition-colors duration-300"
-      >
-        {ctaText}
-        <svg
-          className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </Link> */}
+
     </motion.div>
   );
 }

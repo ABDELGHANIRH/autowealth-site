@@ -124,7 +124,7 @@ Replace placeholder images in `/public` folder:
 |----------|-------------|---------|
 | `NEXT_PUBLIC_CALENDLY_LINK` | Calendly booking link | `https://calendly.com/free-consulting-session/15min` |
 | `NEXT_PUBLIC_WHATSAPP_NUMBER` | WhatsApp business number | `+212762489130` |
-| `NEXT_PUBLIC_COMPANY_EMAIL` | Contact email | `support@yourcompany.com` |
+| `NEXT_PUBLIC_COMPANY_EMAIL` | Contact email | `support@autowealthai.com` |
 | `NEXT_PUBLIC_SITE_URL` | Website URL | `https://autowealthai.com` |
 
 ## 🚀 Deployment
@@ -180,8 +180,8 @@ Tested on all major devices and browsers.
 ## 📞 Support
 
 For questions or support, please contact:
-- Email: [your-email]
-- WhatsApp: [your-number]
+- Email: [support@autowealthai.com]
+- WhatsApp: [+212762489130]
 
 ## 📄 License
 

@@ -254,57 +254,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
-      {/* <section className="section-padding bg-gray-50 dark:bg-gray-900">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Experienced professionals dedicated to helping your business
-              succeed with AI automation.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="card p-6 text-center"
-              >
-                <div className="w-24 h-24 bg-gray-300 dark:bg-gray-600 rounded-full mx-auto mb-4 overflow-hidden">
-                  <Image
-                    src={member.avatar}
-                    alt={member.name}
-                    width={96}
-                    height={96}
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-primary dark:text-white mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-accent font-medium mb-4">{member.role}</p>
-                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                  {member.bio}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-primary to-blue-900">
         <div className="container text-center">
