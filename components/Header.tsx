@@ -24,6 +24,7 @@ export default function Header() {
     { href: '/about', label: 'About' },
     { href: '/blog', label: 'Blogs' },
     { href: '/contact', label: 'Contact' },
+    { href: '/automations', label: 'automations' },
   ];
 
   return (

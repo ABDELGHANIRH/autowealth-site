@@ -67,6 +67,11 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/automations" className="text-gray-600 dark:text-gray-400 hover:text-accent transition-colors duration-300">
+                  automations
+                </Link>
+              </li>
             </ul>
           </div>
 

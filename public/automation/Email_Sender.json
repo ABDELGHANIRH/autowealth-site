@@ -1,0 +1,679 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "delete",
+        "documentId": {
+          "__rl": true,
+          "value": "INSERT_LEADS_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "list"
+        },
+        "startIndex": "={{ $('Switch1').item.json.row_number - 2}}"
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1616,
+        1664
+      ],
+      "id": "70f47ad0-3be5-4eb2-9a0e-adfe22f6d668",
+      "name": "Delete processed row 3",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "2ZIvsRr6AxIwcQwE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "INSERT_LOG_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "email_number": "={{ $('Switch1').item.json.email_number }}",
+            "Email Address": "={{ $('Switch1').item.json.Email }}",
+            "Business Name": "={{ $('Switch1').item.json['Business Name'] }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Business Name",
+              "displayName": "Business Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email Address",
+              "displayName": "Email Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "email_number",
+              "displayName": "email_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1408,
+        1664
+      ],
+      "id": "d25306b2-7a67-4248-ad83-fc6585548c6d",
+      "name": "Log Sent Email 3",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "2ZIvsRr6AxIwcQwE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "documentId": {
+          "__rl": true,
+          "value": "INSERT_LEADS_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "list"
+        },
+        "startIndex": "={{ $('Switch1').item.json.row_number-1}}"
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1616,
+        1456
+      ],
+      "id": "459bf369-36eb-4c1a-820c-620eede1844c",
+      "name": "Delete processed row 2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "2ZIvsRr6AxIwcQwE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "INSERT_LOG_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "email_number": "={{ $('Switch1').item.json.email_number }}",
+            "Email Address": "={{ $('Switch1').item.json.Email }}",
+            "Business Name": "={{ $('Switch1').item.json['Business Name'] }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Business Name",
+              "displayName": "Business Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email Address",
+              "displayName": "Email Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "email_number",
+              "displayName": "email_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1408,
+        1456
+      ],
+      "id": "1556697f-e3e9-4105-a60a-61939b9504e6",
+      "name": "Log Sent Email 2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "2ZIvsRr6AxIwcQwE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "documentId": {
+          "__rl": true,
+          "value": "INSERT_LEADS_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "list"
+        },
+        "startIndex": "={{ $('Switch1').item.json.row_number }}"
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1616,
+        1264
+      ],
+      "id": "ce07e66c-ef51-492a-84aa-d3083059d1d5",
+      "name": "Delete processed row 1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "2ZIvsRr6AxIwcQwE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "INSERT_LOG_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "email_number": "={{ $('Switch1').item.json.email_number }}",
+            "Email Address": "={{ $('Switch1').item.json.Email }}",
+            "Business Name": "={{ $('Switch1').item.json['Business Name'] }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Business Name",
+              "displayName": "Business Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email Address",
+              "displayName": "Email Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "email_number",
+              "displayName": "email_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1408,
+        1264
+      ],
+      "id": "edc532a6-449b-444f-9514-1bc1609e489e",
+      "name": "Log Sent Email 1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "2ZIvsRr6AxIwcQwE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Schedule \n**the workflow runs From 16 to 23, from Monday to Friday** ",
+        "height": 420
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        160,
+        1296
+      ],
+      "typeVersion": 1,
+      "id": "3a2f6644-7937-4e84-aabd-39248467a2b2",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## Get & Filter\n**Get the rows from Google sheet filter if they are sent or not, choose just the first three** ",
+        "height": 420,
+        "width": 668,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        400,
+        1296
+      ],
+      "typeVersion": 1,
+      "id": "4c0310fd-57d1-4031-a111-4e1a67c74a56",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        736,
+        1456
+      ],
+      "id": "bc43e37b-c8b6-47db-9922-d394ce762867",
+      "name": "Limit1"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.email_number }}",
+                    "rightValue": "First",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.email_number }}",
+                    "rightValue": "Second",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.email_number }}",
+                    "rightValue": "Third",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        944,
+        1440
+      ],
+      "id": "ee80bf9b-fb49-4de4-8f13-ff5fc6d0b69e",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "INSERT_LEADS_SHEET_ID_HERE",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "list"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        464,
+        1456
+      ],
+      "id": "42cf380f-ae38-43c6-9c59-2b8df3a54a23",
+      "name": "Get row(s) in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "2ZIvsRr6AxIwcQwE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "triggerAtMinute": 2
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        256,
+        1456
+      ],
+      "id": "fe2a4963-23f2-4a87-b775-9abc95738516",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "toEmail": "={{ $json.Email }}",
+        "subject": "=Receptionist for {{ $json['Business Name'] }}?",
+        "emailFormat": "text",
+        "text": "=Hi there,\n\nI know how hard it is to find reliable office staff who pick up every phone call and reply to every text immediately.\n\nI’ve built a complete \"Digital Admin\" specifically for cleaning businesses.\n\nUnlike a standard voicemail or auto-reply, this system actually picks up the phone, speaks with your clients to answer their questions, and handles text inquiries to book appointments on your calendar—24/7.\n\nIt ensures {{ $json['Business Name'] }} never misses a paying customer, even when you’re asleep or on a job site.\n\nI’d love to send you a 1-minute video showing exactly how it sounds and works.\n\nOpen to taking a look?\n\nBest, [Your Name] [Your Business]",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1200,
+        1264
+      ],
+      "id": "30e6a083-80b2-40c1-afd1-2806f962871e",
+      "name": "Support email",
+      "webhookId": "1183b195-f752-4a18-8f89-4796986333eb",
+      "credentials": {
+        "smtp": {
+          "id": "nMS7Xcql5h551NHr",
+          "name": "SMTP Support"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toEmail": "={{ $json.Email }}",
+        "subject": "=office help for {{ $json['Business Name'] }}",
+        "emailFormat": "text",
+        "text": "=Hi there,\n\nRunning a cleaning business is chaos. You (or your staff) are constantly caught between managing current jobs and trying to answer the phone for new leads.\n\nWhen you get busy, the phone goes unanswered, and that lead calls your competitor.\n\nI don't want to do a \"consulting session.\" I just want to install a tool that fixes this.\n\nI have a Digital Admin that answers your phone and replies to texts 24/7. It qualifies the lead, answers their questions, and books them into your calendar without you lifting a finger.\n\nIt handles the \"busy work\" so you can focus on the cleaning.\n\nOpen to seeing a 1-minute video of how it handles a live call?\n\nKind regards, [Your Name] [Your Business]",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1200,
+        1456
+      ],
+      "id": "fd18a181-5e7c-4c01-a758-51fad57cd691",
+      "name": "Founder email",
+      "webhookId": "708877d9-dbbb-4577-aad8-32504ad7d145",
+      "credentials": {
+        "smtp": {
+          "id": "nMS7Xcql5h551NHr",
+          "name": "SMTP Support"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toEmail": "={{ $json.Email }}",
+        "subject": "=7 PM at {{ $json['Business Name'] }}",
+        "emailFormat": "text",
+        "text": "=Hi there,\n\nQuestion: Who answers the phone for {{ $json['Business Name'] }} at 7 PM or on Sundays?\n\nMost cleaning owners tell me \"Nobody,\" or \"It goes to voicemail.\"\n\nThat is where your marketing budget goes to die. Customers looking for cleaners want an answer now, not tomorrow morning.\n\nI built an Automated Booking Assistant that covers your \"off-hours.\" It chats with leads, answers pricing questions, and books appointments while you sleep.\n\nIt stops the \"phone tag\" and fills your calendar automatically.\n\nCan I send you a video showing exactly how it works?\n\nRegards, [Your Name]",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1200,
+        1664
+      ],
+      "id": "5c077a51-79da-4b39-a695-c94009d27889",
+      "name": "Hello email",
+      "webhookId": "c94af69a-a008-4a52-a2a7-8becbbd57082",
+      "credentials": {
+        "smtp": {
+          "id": "nMS7Xcql5h551NHr",
+          "name": "SMTP Support"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Log Sent Email 3": {
+      "main": [
+        [
+          {
+            "node": "Delete processed row 3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Sent Email 2": {
+      "main": [
+        [
+          {
+            "node": "Delete processed row 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Sent Email 1": {
+      "main": [
+        [
+          {
+            "node": "Delete processed row 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit1": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Support email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Founder email",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Hello email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet1": {
+      "main": [
+        [
+          {
+            "node": "Limit1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Support email": {
+      "main": [
+        [
+          {
+            "node": "Log Sent Email 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Founder email": {
+      "main": [
+        [
+          {
+            "node": "Log Sent Email 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hello email": {
+      "main": [
+        [
+          {
+            "node": "Log Sent Email 3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "c56975295062d25bdbb52f0b9af12677fc2da8b3662b5c9a20985df235d19b9d"
+  }
+}
